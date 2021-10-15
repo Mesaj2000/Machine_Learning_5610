@@ -26,7 +26,7 @@ def load_labels():
 
 
 def cluster_and_save(data, distance_metric):
-    cluster_labels, i, exit_code = kml.k_means(data, NUM_CLASSES, distance_metric)
+    cluster_labels = kml.k_means(data, NUM_CLASSES, distance_metric)[0]
     
     np.save(SAVED_LABELS.format(SAVE_NUMBER, distance_metric.__name__), cluster_labels)
     
