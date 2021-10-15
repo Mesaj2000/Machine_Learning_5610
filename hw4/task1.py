@@ -1,4 +1,7 @@
-from kmeans_library import k_means, manhattan_distance, euclidean_distance
+from kmeans_library import k_means_github_restore as k_means
+from kmeans_library import manhattan_distance_tuples as manhattan_distance
+from kmeans_library import euclidean_distance_tuples as euclidean_distance
+
 
 def task_1():
     data = [

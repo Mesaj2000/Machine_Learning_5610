@@ -1,5 +1,5 @@
-from kmeans_library import euclidean_distance as dist
-        
+from kmeans_library import euclidean_distance_tuples as dist
+
 
 def task_3():
     reds = [
